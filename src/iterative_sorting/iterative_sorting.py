@@ -19,11 +19,27 @@ def selection_sort( arr ):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
+    for i in range(1, len(arr)):
+        for j in range(0, len(arr)-1):
+            if arr[j] > arr[j+1]:
+                temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1]= temp
 
     return arr
 
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
+    if maximum == -1:
+        maximum = max(arr)
+    ## initializes an array of length maximum + 1 and everything starts with 0
+    counts = [0] * (maximum + 1)
+    for item in arr:
+        counts[item] += 1
+
+    for number 
+
+
 
     return arr
